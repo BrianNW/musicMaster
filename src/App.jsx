@@ -31,7 +31,7 @@ class App extends Component {
       fetch(FETCH_URL, {
         method: 'GET'
       })
-      .then(respons => respons.json())
+      .then(response => response.json())
       .then(json => {
         console.log('artist\'s top tracks:', json);
         const { tracks } = json;
